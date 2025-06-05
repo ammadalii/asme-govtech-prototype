@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Shield, Users, Globe, Award, ChevronRight, Building, Code, Database, Star, Heart, GraduationCap, FileText, Brain, Cloud, Smartphone, Settings } from 'lucide-react';
@@ -9,30 +10,6 @@ const Home = () => {
     { label: 'Expert Engineers', value: '200+' },
     { label: 'Success Rate', value: '99%' },
     { label: 'Client Satisfaction', value: '100%' },
-  ];
-
-  const overviewSections = [
-    {
-      title: 'Services',
-      description: 'Comprehensive technology services from cloud solutions to AI implementation',
-      icon: Code,
-      link: '/services',
-      color: 'bg-blue-500'
-    },
-    {
-      title: 'Solutions',
-      description: 'Proven platforms and systems that scale for government operations',
-      icon: Database,
-      link: '/solutions',
-      color: 'bg-green-500'
-    },
-    {
-      title: 'Industries',
-      description: 'Specialized expertise across education, healthcare, and public sector',
-      icon: Building,
-      link: '/industries',
-      color: 'bg-purple-500'
-    }
   ];
 
   const services = [
@@ -198,48 +175,13 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Overview Sections */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Capabilities</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive technology solutions designed specifically for government operations and public sector requirements
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {overviewSections.map((section, index) => (
-              <Link 
-                key={index}
-                to={section.link}
-                className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
-              >
-                <div className="p-8">
-                  <div className={`${section.color} w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
-                    <section.icon className="text-white" size={24} />
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-700 transition-colors">
-                    {section.title}
-                  </h3>
-                  <p className="text-gray-600 mb-6">{section.description}</p>
-                  <div className="flex items-center text-blue-600 font-semibold group-hover:text-blue-700">
-                    Learn More <ChevronRight className="ml-1 group-hover:translate-x-1 transition-transform" size={16} />
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Services Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Services</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Government-grade technology services backed by 18+ years of experience
+              Government-grade technology services backed by proven experience
             </p>
           </div>
           
