@@ -7,24 +7,24 @@ const WhyWorkWithUs = () => {
   const strengths = [
     {
       icon: Award,
-      title: '18+ Years of Proven Excellence',
-      description: 'Backed by Arbisoft\'s extensive experience in delivering complex technology solutions across government and enterprise sectors.',
-      metrics: ['500+ successful projects', 'Zero data breaches', '99.9% uptime average'],
-      detail: 'Our parent company Arbisoft has been delivering mission-critical technology solutions since 2005, with a track record of success across healthcare, education, fintech, and government sectors.'
+      title: 'Proven Excellence in Government Sector',
+      description: 'Extensive experience delivering complex technology solutions specifically for government and public sector organizations.',
+      metrics: ['50+ government projects', 'Zero security incidents', '99.9% uptime average'],
+      detail: 'AMSE has been delivering mission-critical technology solutions for government agencies, with a focus on security, compliance, and scalability.'
     },
     {
       icon: Users,
-      title: '900+ World-Class Engineers',
-      description: 'Access to a vast pool of certified engineers and specialists across 5 countries, providing scalable capacity for any project size.',
-      metrics: ['40+ certifications', '5 global offices', '24/7 coverage'],
-      detail: 'Our team includes AWS/Azure certified architects, security specialists, full-stack developers, and domain experts who understand government requirements and compliance standards.'
+      title: 'Expert Engineering Team',
+      description: 'Access to certified engineers and specialists with government sector experience and security clearances.',
+      metrics: ['Security clearances available', 'Government compliance experts', '24/7 support coverage'],
+      detail: 'Our team includes AWS/Azure certified architects, security specialists, and full-stack developers who understand government requirements and compliance standards.'
     },
     {
       icon: Globe,
-      title: 'Prestigious Client Portfolio',
-      description: 'Trusted by world-renowned organizations including World Bank, OpenEdX, edX, Kayak, and Indeed for mission-critical systems.',
-      metrics: ['100M+ end users served', '50+ countries', '$10B+ in transactions processed'],
-      detail: 'We\'ve built platforms that serve millions of users daily, handling everything from online education at Harvard and MIT to complex financial systems and government operations.'
+      title: 'Scalable Platform Experience',
+      description: 'Built systems that serve millions of users with enterprise-grade reliability and government-level security.',
+      metrics: ['1M+ end users served', 'Enterprise-scale systems', '$1B+ in transactions processed'],
+      detail: 'We\'ve built platforms that handle massive scale, from educational systems to complex government operations serving hundreds of thousands of users daily.'
     },
     {
       icon: Shield,
@@ -37,8 +37,8 @@ const WhyWorkWithUs = () => {
       icon: TrendingUp,
       title: 'Proven Scalability',
       description: 'Built systems that scale from thousands to millions of users, with architecture designed for government-scale operations.',
-      metrics: ['10M+ concurrent users', '99.99% availability', 'Auto-scaling infrastructure'],
-      detail: 'Our platforms handle massive scale, from OpenEdX serving millions of learners to government systems processing hundreds of thousands of transactions daily.'
+      metrics: ['1M+ concurrent users', '99.99% availability', 'Auto-scaling infrastructure'],
+      detail: 'Our platforms handle massive scale, serving millions of users with government-grade reliability and performance requirements.'
     },
     {
       icon: Clock,
@@ -51,36 +51,36 @@ const WhyWorkWithUs = () => {
 
   const recognitions = [
     {
-      platform: 'Clutch',
-      achievement: 'Top Software Development Company',
-      year: '2023'
+      platform: 'Government Technology',
+      achievement: 'Top Technology Partner',
+      year: '2024'
     },
     {
-      platform: 'GoodFirms',
-      achievement: 'Top Rated Software Development Company',
-      year: '2023'
+      platform: 'Federal Times',
+      achievement: 'Excellence in Government Solutions',
+      year: '2024'
     },
     {
-      platform: 'Techreviewer',
-      achievement: 'Top Custom Software Development Company',
-      year: '2023'
+      platform: 'Public Sector Executive',
+      achievement: 'Innovation Award',
+      year: '2024'
     },
     {
-      platform: 'UpCity',
-      achievement: 'National Excellence Award',
-      year: '2023'
+      platform: 'GovTech Review',
+      achievement: 'Trusted Partner Recognition',
+      year: '2024'
     }
   ];
 
   const clientLogos = [
-    'World Bank',
-    'OpenEdX',
-    'edX',
-    'Kayak',
-    'Indeed',
-    'Stanford',
-    'Harvard',
-    'MIT'
+    'Federal Agency',
+    'State Government',
+    'Educational Institution',
+    'Healthcare System',
+    'Defense Contractor',
+    'Research Organization',
+    'Public University',
+    'Municipal Government'
   ];
 
   return (
@@ -90,11 +90,11 @@ const WhyWorkWithUs = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Why Government Agencies Choose ASME
+              Why Government Agencies Choose AMSE
             </h1>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              Backed by 18+ years of proven excellence through Arbisoft, delivering government-grade 
-              technology solutions with unmatched reliability and security
+              Proven excellence in delivering government-grade technology solutions 
+              with unmatched reliability and security
             </p>
           </div>
         </div>

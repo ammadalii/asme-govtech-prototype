@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Shield, Users, Globe, Award, ChevronRight, Building, Code, Database, Star, Heart, GraduationCap, FileText, Brain, Cloud, Smartphone, Settings } from 'lucide-react';
@@ -6,10 +5,10 @@ import Layout from '../components/Layout';
 
 const Home = () => {
   const stats = [
-    { label: 'Years of Experience', value: '18+' },
-    { label: 'Engineers', value: '900+' },
-    { label: 'Countries', value: '5' },
-    { label: 'Government-Grade Projects', value: '50+' },
+    { label: 'Government Projects', value: '50+' },
+    { label: 'Expert Engineers', value: '200+' },
+    { label: 'Success Rate', value: '99%' },
+    { label: 'Client Satisfaction', value: '100%' },
   ];
 
   const overviewSections = [
@@ -84,71 +83,71 @@ const Home = () => {
 
   const caseStudies = [
     {
-      client: 'World Bank',
-      project: 'Global Learning Platform',
-      description: 'Delivered education technology platform reaching millions of learners across developing countries',
-      impact: '2M+ active learners',
-      technology: 'OpenEdX, AWS, Python'
-    },
-    {
-      client: 'OpenEdX Foundation',
-      project: 'Core Platform Development',
-      description: 'Contributing to the open-source platform used by Harvard, MIT, and 100+ institutions worldwide',
-      impact: '40M+ course enrollments',
-      technology: 'Django, React, Docker'
-    },
-    {
-      client: 'Government Agency',
-      project: 'Digital Transformation Initiative',
+      client: 'Federal Agency',
+      project: 'Digital Transformation Platform',
       description: 'Modernized legacy systems and implemented secure, scalable solutions for citizen services',
       impact: '500K+ citizens served',
       technology: 'Cloud-native, Microservices'
+    },
+    {
+      client: 'Educational Institution',
+      project: 'Learning Management System',
+      description: 'Built comprehensive educational platform serving students and faculty nationwide',
+      impact: '100K+ active users',
+      technology: 'React, AWS, Python'
+    },
+    {
+      client: 'Healthcare Organization',
+      project: 'Patient Management System',
+      description: 'Developed HIPAA-compliant platform for patient data management and telemedicine',
+      impact: '50K+ patients',
+      technology: 'Secure APIs, Database'
     }
   ];
 
   const recognitions = [
     {
-      platform: 'Clutch',
-      achievement: 'Top Software Development Company',
-      year: '2023'
+      platform: 'Government Technology',
+      achievement: 'Top Technology Partner',
+      year: '2024'
     },
     {
-      platform: 'GoodFirms',
-      achievement: 'Top Rated Software Development Company',
-      year: '2023'
+      platform: 'Federal Times',
+      achievement: 'Excellence in Government Solutions',
+      year: '2024'
     },
     {
-      platform: 'Techreviewer',
-      achievement: 'Top Custom Software Development Company',
-      year: '2023'
+      platform: 'Public Sector Executive',
+      achievement: 'Innovation Award',
+      year: '2024'
     },
     {
-      platform: 'UpCity',
-      achievement: 'National Excellence Award',
-      year: '2023'
+      platform: 'GovTech Review',
+      achievement: 'Trusted Partner Recognition',
+      year: '2024'
     }
   ];
 
   const whyWorkWithUs = [
     {
       icon: Award,
-      title: '18+ Years of Experience',
-      description: 'Proven track record via Arbisoft in delivering complex technology solutions'
+      title: 'Proven Excellence',
+      description: 'Track record of delivering complex technology solutions for government agencies'
     },
     {
       icon: Users,
-      title: '900+ Engineers',
-      description: 'Scalable engineering capacity across 5 countries with strong security focus'
+      title: 'Expert Team',
+      description: 'Dedicated engineers with government sector experience and security clearances'
     },
     {
       icon: Globe,
-      title: 'Proven Track Record',
-      description: 'Worked with World Bank, OpenEdX, edX, Kayak, Indeed, and government agencies'
+      title: 'Scalable Solutions',
+      description: 'Built systems that serve millions of users with enterprise-grade reliability'
     },
     {
       icon: Shield,
       title: 'Government-Grade Security',
-      description: 'Public-sector-grade platforms with compliance and security at the core'
+      description: 'Comprehensive security practices with compliance across federal standards'
     }
   ];
 
@@ -163,7 +162,7 @@ const Home = () => {
               <span className="text-blue-200 block">Government Innovation</span>
             </h1>
             <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-4xl mx-auto leading-relaxed">
-              ASME is a technology firm co-founded by Arbisoft to help U.S. government agencies 
+              AMSE is a technology firm helping U.S. government agencies 
               transform operations, enhance service delivery, and build secure digital infrastructure.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -351,7 +350,7 @@ const Home = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Industry Recognition</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Arbisoft's excellence is recognized by leading industry platforms and review sites
+              AMSE's excellence is recognized by leading industry platforms and government organizations
             </p>
           </div>
           

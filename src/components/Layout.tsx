@@ -29,7 +29,7 @@ const Layout = ({ children }: LayoutProps) => {
           <div className="flex justify-between h-16">
             <div className="flex items-center">
               <Link to="/" className="text-2xl font-bold text-blue-700">
-                ASME
+                AMSE
               </Link>
             </div>
             
@@ -93,12 +93,12 @@ const Layout = ({ children }: LayoutProps) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="col-span-1 md:col-span-2">
-              <h3 className="text-2xl font-bold text-white mb-4">ASME</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">AMSE</h3>
               <p className="text-gray-300 mb-4">
                 Trusted Technology Partner for Government Innovation
               </p>
               <p className="text-gray-400 text-sm">
-                Co-founded by Arbisoft to help U.S. government agencies transform operations, 
+                Helping U.S. government agencies transform operations, 
                 enhance service delivery, and build secure digital infrastructure.
               </p>
             </div>
@@ -130,7 +130,7 @@ const Layout = ({ children }: LayoutProps) => {
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 ASME. All rights reserved. Co-founded by Arbisoft.</p>
+            <p>&copy; 2024 AMSE. All rights reserved.</p>
           </div>
         </div>
       </footer>
