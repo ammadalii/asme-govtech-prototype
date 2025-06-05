@@ -272,7 +272,7 @@ const Home = () => {
       </section>
 
       {/* Solutions Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Solutions</h2>
@@ -310,7 +310,7 @@ const Home = () => {
       </section>
 
       {/* Case Studies Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Case Studies</h2>
@@ -345,7 +345,7 @@ const Home = () => {
       </section>
 
       {/* Industry Recognition */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Industry Recognition</h2>
@@ -368,12 +368,12 @@ const Home = () => {
       </section>
 
       {/* Why Work With Us */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Work With Us</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Backed by Arbisoft's proven expertise and government-grade security standards
+              Backed by proven expertise and government-grade security standards
             </p>
           </div>
           
@@ -406,7 +406,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-white mb-4">Ready to Transform Your Operations?</h2>
           <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-            Let's discuss how ASME can help your agency achieve its technology goals with proven, secure solutions.
+            Let's discuss how AMSE can help your agency achieve its technology goals with proven, secure solutions.
           </p>
           <Link 
             to="/contact" 
