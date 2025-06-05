@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Shield, Users, Globe, Award, ChevronRight, Building, Code, Database } from 'lucide-react';
+import { Shield, Users, Globe, Award, ChevronRight, Building, Code, Database, Star, Heart, GraduationCap, FileText, Brain, Cloud, Smartphone, Settings } from 'lucide-react';
 import Layout from '../components/Layout';
 
 const Home = () => {
@@ -33,6 +33,99 @@ const Home = () => {
       icon: Building,
       link: '/industries',
       color: 'bg-purple-500'
+    }
+  ];
+
+  const services = [
+    {
+      icon: Cloud,
+      title: 'Cloud & DevOps',
+      description: 'Comprehensive cloud migration, infrastructure automation, and DevOps implementation for government agencies.'
+    },
+    {
+      icon: Code,
+      title: 'Custom Software Development',
+      description: 'End-to-end software development services tailored for government operations and enterprise systems.'
+    },
+    {
+      icon: Database,
+      title: 'Data Engineering & Analytics',
+      description: 'Transform your data into actionable insights with modern data engineering practices and analytics platforms.'
+    },
+    {
+      icon: Brain,
+      title: 'AI & Machine Learning',
+      description: 'Leverage artificial intelligence to automate processes with government compliance and ethical considerations.'
+    }
+  ];
+
+  const solutions = [
+    {
+      icon: GraduationCap,
+      title: 'Learning Management Systems',
+      description: 'Scalable educational platforms built on OpenEdX technology, serving millions of learners worldwide.'
+    },
+    {
+      icon: Heart,
+      title: 'Healthcare Information Systems',
+      description: 'HIPAA-compliant healthcare platforms for patient management, telemedicine, and health data analytics.'
+    },
+    {
+      icon: FileText,
+      title: 'Document Management & Workflow',
+      description: 'Enterprise document management and workflow automation systems for government processes.'
+    },
+    {
+      icon: Shield,
+      title: 'Identity & Access Management',
+      description: 'Comprehensive IAM solutions with multi-factor authentication for government security requirements.'
+    }
+  ];
+
+  const caseStudies = [
+    {
+      client: 'World Bank',
+      project: 'Global Learning Platform',
+      description: 'Delivered education technology platform reaching millions of learners across developing countries',
+      impact: '2M+ active learners',
+      technology: 'OpenEdX, AWS, Python'
+    },
+    {
+      client: 'OpenEdX Foundation',
+      project: 'Core Platform Development',
+      description: 'Contributing to the open-source platform used by Harvard, MIT, and 100+ institutions worldwide',
+      impact: '40M+ course enrollments',
+      technology: 'Django, React, Docker'
+    },
+    {
+      client: 'Government Agency',
+      project: 'Digital Transformation Initiative',
+      description: 'Modernized legacy systems and implemented secure, scalable solutions for citizen services',
+      impact: '500K+ citizens served',
+      technology: 'Cloud-native, Microservices'
+    }
+  ];
+
+  const recognitions = [
+    {
+      platform: 'Clutch',
+      achievement: 'Top Software Development Company',
+      year: '2023'
+    },
+    {
+      platform: 'GoodFirms',
+      achievement: 'Top Rated Software Development Company',
+      year: '2023'
+    },
+    {
+      platform: 'Techreviewer',
+      achievement: 'Top Custom Software Development Company',
+      year: '2023'
+    },
+    {
+      platform: 'UpCity',
+      achievement: 'National Excellence Award',
+      year: '2023'
     }
   ];
 
@@ -136,6 +229,140 @@ const Home = () => {
                   </div>
                 </div>
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Services</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Government-grade technology services backed by 18+ years of experience
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            {services.map((service, index) => (
+              <div key={index} className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-blue-100 p-3 rounded-lg flex-shrink-0">
+                    <service.icon className="text-blue-600" size={20} />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{service.title}</h3>
+                    <p className="text-gray-600 text-sm">{service.description}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          <div className="text-center">
+            <Link 
+              to="/services" 
+              className="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors inline-flex items-center"
+            >
+              View All Services
+              <ChevronRight className="ml-2" size={16} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Solutions Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Solutions</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Proven platforms and systems that scale for government operations
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            {solutions.map((solution, index) => (
+              <div key={index} className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition-shadow">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-green-100 p-3 rounded-lg flex-shrink-0">
+                    <solution.icon className="text-green-600" size={20} />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{solution.title}</h3>
+                    <p className="text-gray-600 text-sm">{solution.description}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          <div className="text-center">
+            <Link 
+              to="/solutions" 
+              className="bg-green-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-800 transition-colors inline-flex items-center"
+            >
+              View All Solutions
+              <ChevronRight className="ml-2" size={16} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Case Studies Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Case Studies</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Real-world implementations that demonstrate our capability to deliver at scale
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {caseStudies.map((study, index) => (
+              <div key={index} className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-shadow">
+                <div className="mb-4">
+                  <h3 className="text-lg font-bold text-gray-900 mb-1">{study.client}</h3>
+                  <h4 className="text-blue-600 font-semibold text-sm mb-3">{study.project}</h4>
+                  <p className="text-gray-600 text-sm mb-4">{study.description}</p>
+                </div>
+                
+                <div className="border-t border-gray-100 pt-4">
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="text-gray-500 text-xs">Impact:</span>
+                    <span className="text-blue-700 font-semibold text-sm">{study.impact}</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-500 text-xs">Technology:</span>
+                    <span className="text-gray-700 text-xs">{study.technology}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Industry Recognition */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Industry Recognition</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Arbisoft's excellence is recognized by leading industry platforms and review sites
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {recognitions.map((recognition, index) => (
+              <div key={index} className="bg-yellow-50 p-6 rounded-lg text-center border border-yellow-200">
+                <Star className="text-yellow-500 mx-auto mb-4" size={32} />
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{recognition.platform}</h3>
+                <p className="text-yellow-700 font-medium text-sm mb-1">{recognition.achievement}</p>
+                <p className="text-gray-600 text-sm">{recognition.year}</p>
+              </div>
             ))}
           </div>
         </div>
